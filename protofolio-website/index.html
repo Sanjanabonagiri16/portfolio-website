@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjana Bonagiri - Portfolio</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: #6200ea;
+            color: #fff;
+            padding: 60px 0;
+            text-align: center;
+            transition: background-color 0.5s ease;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        header p {
+            font-size: 1.2em;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        nav {
+            background-color: #3700b3;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #bb86fc;
+        }
+
+        .container {
+            width: 85%;
+            margin: auto;
+            padding: 30px 0;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #6200ea;
+            text-align: center;
+            position: relative;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        section h2::after {
+            content: '';
+            width: 50px;
+            height: 4px;
+            background-color: #3700b3;
+            position: absolute;
+            left: 50%;
+            bottom: -10px;
+            transform: translateX(-50%);
+            animation: expand 1s ease-in-out;
+        }
+
+        #about,
+        {
+            background: #fff;
+            padding : 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        ul li:last-child {
+            border-bottom: none;
+        }
+
+        #projects ul li {
+            padding: 15px 0;
+            transition: transform 0.3s ease;
+        }
+
+        #projects ul li:hover {
+            transform: translateX(10px);
+            background-color: #f9f9f9;
+        }
+
+        footer {
+            background-color: #6200ea;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+            position: relative;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        footer p {
+            margin-bottom: 15px;
+        }
+
+        .social-links a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.5em;
+            transition: transform 0.3s ease;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.1);
+            color: #bb86fc;
+        }
+
+        /* Animations */
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes expand {
+            from {
+                width: 0;
+            }
+            to {
+                width: 50px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Sanjana Bonagiri</h1>
+        <p>Welcome to My Portfolio</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="#certifications">Certifications</a>
+    </nav>
+
+    <div class="container"></div>
+            <section id="about">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <p>
+                        I am Sanjana Bonagiri, a dedicated and passionate professional specializing in Full-Stack Development, Python Programming, and Business Analysis. With a strong foundation in technology and a keen analytical mind, I strive to leverage my skills to deliver innovative solutions and drive impactful results.
+                    </p>
+                    <p>
+                        My background in Computer Science & Engineering has equipped me with a comprehensive understanding of both front-end and back-end development, as well as advanced problem-solving capabilities. My experience spans developing sophisticated applications, integrating cutting-edge technologies, and conducting thorough data analysis to inform strategic decisions.
+                    </p>
+                    <p>
+                        I am committed to continuous learning and growth, staying at the forefront of technological advancements to enhance my expertise and contribute meaningfully to projects and initiatives.
+                    </p>
+                </div>
+                <style>
+                    #about {
+                        background: #fff;
+                        padding: 30px;
+                        border-radius: 8px;
+                        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+                        animation: fadeInUp 1.5s ease-in-out;
+                    }
+                    
+                    #about h2 {
+                        font-size: 2.5em;
+                        color: #6200ea;
+                        text-align: center;
+                        margin-bottom: 20px;
+                        position: relative;
+                        animation: slideIn 1s ease-in-out;
+                    }
+                    
+                    #about h2::after {
+                        content: '';
+                        width: 50px;
+                        height: 4px;
+                        background-color: #3700b3;
+                        position: absolute;
+                        left: 50%;
+                        bottom: -10px;
+                        transform: translateX(-50%);
+                        animation: expand 1s ease-in-out;
+                    }
+                    
+                    .about-content p {
+                        font-size: 1.1em;
+                        color: #333;
+                        line-height: 1.6;
+                        margin-bottom: 15px;
+                        animation: fadeIn 2s ease-in-out;
+                    }
+                    
+                    @keyframes fadeInUp {
+                        from {
+                            opacity: 0;
+                            transform: translateY(20px);
+                        }
+                        to {
+                            opacity: 1;
+                            transform: translateY(0);
+                        }
+                    }
+                    
+                    @keyframes slideIn {
+                        from {
+                            opacity: 0;
+                            transform: translateY(-20px);
+                        }
+                        to {
+                            opacity: 1;
+                            transform: translateY(0);
+                        }
+                    }
+                    
+                    @keyframes expand {
+                        from {
+                            width: 0;
+                        }
+                        to {
+                            width: 50px;
+                        }
+                    }
+                    
+                </style>
+            </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/350x200?text=AI+Jarvis" alt="AI Jarvis with Smart Blind Stick" class="project-image"/>
+                    <div class="project-info">
+                        <h3>AI Jarvis with Smart Blind Stick</h3>
+                        <p>Developed an AI assistant integrated with a smart blind stick using Arduino, Python (OpenAI API), NLP, and PyQt5 GUI. Secured a patent for this assistive technology improving accessibility for visually impaired individuals.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/350x200?text=DriveWise" alt="DriveWise" class="project-image"/>
+                    <div class="project-info">
+                        <h3>DriveWise</h3>
+                        <p>Android app revolutionizing the driving school experience in India. Features include school discovery, booking, learning support, community interaction, profile management, and promotion.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <style>
+        #projects {
+            background: #f0f4f8;
+            padding: 60px 20px;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+        
+        #projects h2 {
+            font-size: 2.5em;
+            color: #6200ea;
+            text-align: center;
+            margin-bottom: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            animation: fadeInDown 1s ease-in-out;
+        }
+        
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        
+        .project-card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            max-width: 350px;
+            position: relative;
+            animation: fadeInUp 1s ease-in-out;
+        }
+        
+        .project-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .project-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: opacity 0.4s ease;
+        }
+        
+        .project-card:hover .project-image {
+            opacity: 0.8;
+        }
+        
+        .project-info {
+            padding: 20px;
+            background: #f9f9f9;
+            border-top: 1px solid #ddd;
+            position: relative;
+        }
+        
+        .project-info h3 {
+            font-size: 1.6em;
+            margin-bottom: 10px;
+            color: #6200ea;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: color 0.3s ease;
+        }
+        
+        .project-info p {
+            font-size: 1.1em;
+            color: #333;
+            line-height: 1.7;
+            margin-bottom: 0;
+        }
+        
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: #6200ea;
+            transition: height 0.3s ease;
+        }
+        
+        .project-card:hover::before {
+            height: 100%;
+        }
+    </style>         
+            <section id="skills">
+                <h2>Skills</h2>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/python.png" alt="Python">
+                    </div>
+                    <div class="skill-info">
+                        <h3>Python</h3>
+                        <p>Advanced proficiency in Python, with experience in AI, web apps, and data analysis.</p>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/javascript.png" alt="JavaScript">
+                    </div>
+                    <div class="skill-info">
+                        <h3>JavaScript</h3>
+                        <p>Strong skills in JavaScript for interactive web applications and Chrome extensions.</p>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/sql.png" alt="Databases">
+                    </div>
+                    <div class="skill-info">
+                        <h3>Databases</h3>
+                        <p>SQL, DBMS</p>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/web.png" alt="Web Development">
+                    </div>
+                    <div class="skill-info">
+                        <h3>Web Development</h3>
+                        <p>Proficient in HTML, CSS, Flask, and Django.</p>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/cloud.png" alt="Cloud Services">
+                    </div>
+                    <div class="skill-info">
+                        <h3>Cloud Services</h3>
+                        <p>Familiar with AWS and Azure.</p>
+                    </div>
+                </div>
+            </section>
+    <style>
+    
+    #skills {
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
+    
+    #skills h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+    }
+    
+    .skill-card {
+        display: flex;
+        align-items: center;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        padding: 15px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+    }
+    
+    .skill-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    
+    .skill-icon img {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+    }
+    
+    .skill-info {
+        flex: 1;
+    }
+    
+    .skill-info h3 {
+        margin: 0;
+        color: #333;
+    }
+    
+    .skill-info p {
+        margin: 5px 0 0;
+        color: #555;
+    }
+</style>    
+<section id="resume">
+    <h2>Download My Resume</h2>
+    <p>
+        Click the button below to download my resume and learn more about my professional background and qualifications.
+    </p>
+    <a href="resume.pdf" download class="resume-link">Download Resume</a>
+</section>
+<style>
+    #resume {
+        background: #fff;
+        padding: 40px;
+        margin: 50px 0;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        animation: fadeInUp 1s ease-in-out;
+    }
+    
+    #resume h2 {
+        font-size: 2.5em;
+        color: #6200ea;
+        margin-bottom: 20px;
+        animation: slideIn 1s ease-in-out;
+    }
+    
+    #resume p {
+        font-size: 1.2em;
+        margin-bottom: 30px;
+        color: #333;
+    }
+    
+    .resume-link {
+        display: inline-block;
+        padding: 12px 25px;
+        background-color: #6200ea;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1.1em;
+        font-weight: bold;
+        transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .resume-link:hover {
+        background-color: #3700b3;
+        transform: scale(1.05);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Animations */
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+</style>
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <div class="certifications-container">
+            <div class="certification-card">
+                <h3>Deloitte</h3>
+                <p>Technology Job Simulation</p>
+                <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Deloitte%20Australia/YPWCiGNTkr6QxcpEu_Deloitte%20Australia_dP7ZYCW8Z76DWQFQ2_1710256690929_completion_certificate.pdf" target="_blank" class="certification-link">View Certificate</a>
+            </div>
+            <div class="certification-card">
+                <h3>Microsoft</h3>
+                <p>Azure Fundamentals</p>
+                <a href="https://www.credly.com/badges/19ff498a-c5eb-4bb9-8e49-424e22a0350f/linked_in_profile" target="_blank" class="certification-link">View Certificate</a>
+            </div>
+            <div class="certification-card">
+                <h3>AWS</h3>
+                <p>Solutions Architecture Job Simulation</p>
+                <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/AWS/kkE9HyeNcw6rwCRGw_AWS%20APAC_dP7ZYCW8Z76DWQFQ2_1707742964613_completion_certificate.pdf" target="_blank" class="certification-link">View Certificate</a>
+            </div>
+            <div class="certification-card">
+                <h3>Accenture</h3>
+                <p>Developer and Technology Job Simulation</p>
+                <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Accenture%20UK/3xnZEj9kfpoQKW885_Accenture%20UK_dP7ZYCW8Z76DWQFQ2_1707744348647_completion_certificate.pdf" target="_blank" class="certification-link">View Certificate</a>
+            </div>
+            <div class="certification-card">
+                <h3>Google</h3>
+                <p>Introduction to Generative AI</p>
+                <a href="https://www.cloudskillsboost.google/public_profiles/082b1e93-30d5-4c43-91fc-dd6d12dd350a/badges/7977201?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share" target="_blank" class="certification-link">View Certificate</a>
+            </div>
+            <div class="certification-card">
+                <h3>Google</h3>
+                <p>Introduction to Large Language Models</p>
+                <a href="https://www.cloudskillsboost.google/public_profiles/082b1e93-30d5-4c43-91fc-dd6d12dd350a/badges/7981922?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share" target="_blank" class="certification-link">View Certificate</a>
+            </div>
+            <div class="certification-card">
+                <h3>freeCodeCamp</h3>
+                <p>Machine Learning with Python</p>
+                <a href="https://freecodecamp.org/certification/sanjana_2024/machine-learning-with-python-v7" target="_blank" class="certification-link">View Certificate</a>
+            </div>
+            <div class="certification-card">
+                <h3>Hackerrank</h3>
+                <p>Python (Basic)</p>
+                <a href="https://www.hackerrank.com/certificates/b8d9e46684e1" target="_blank" class="certification-link">View Certificate</a>
+            </div>
+            <div class="certification-card">
+                <h3>Accenture North America</h3>
+                <p>Data Analytics and Visualization Job Simulation</p>
+                <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Accenture%20North%20America/hzmoNKtzvAzXsEqx8_Accenture%20North%20America_dP7ZYCW8Z76DWQFQ2_1703093042521_completion_certificate.pdf" target="_blank" class="certification-link">View Certificate</a>
+            </div>
+            <div class="certification-card">
+                <h3>Cognizant</h3>
+                <p>AI Job Simulation</p>
+                <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Cognizant/5N2ygyhzMWjKQmgCK_Cognizant_dP7ZYCW8Z76DWQFQ2_1703220618101_completion_certificate.pdf" target="_blank" class="certification-link">View Certificate</a>
+            </div>
+            <div class="certification-card">
+                <h3>Google</h3>
+                <p>Google Analytics Certification</p>
+                <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Cognizant/5N2ygyhzMWjKQmgCK_Cognizant_dP7ZYCW8Z76DWQFQ2_1703220618101_completion_certificate.pdf" target="_blank" class="certification-link">View Certificate</a>
+            </div>
+            <div class="certification-card">
+                <h3>Cisco</h3>
+                <p>Introduction to Data Science</p>
+                <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/J.P.%20Morgan/R5iK7HMxJGBgaSbvk_J.P.%20Morgan_dP7ZYCW8Z76DWQFQ2_1703221544122_completion_certificate.pdf" target="_blank" class="certification-link">View Certificate</a>
+            </div>
+            <div class="certification-card">
+                <h3>J.P. Morgan</h3>
+                <p>Software Engineering Job Simulation</p>
+                <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/PwC%20Switzerland/a87GpgE6tiku7q3gu_PwC%20Switzerland_dP7ZYCW8Z76DWQFQ2_1703222383092_completion_certificate.pdf" target="_blank" class="certification-link">View Certificate</a>
+            </div>
+            <div class="certification-card">
+                <h3>PWC Switzerland</h3>
+                <p>PowerBI Job Simulation</p>
+                <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Walmart%20USA/oX6f9BbCL9kJDJzfg_Walmart%20USA_dP7ZYCW8Z76DWQFQ2_1703234854244_completion_certificate.pdf" target="_blank" class="certification-link">View Certificate</a>
+            </div>
+            <div class="certification-card">
+                <h3>Walmart USA</h3>
+                <p>Advanced Software Engineering Job Simulation</p>
+                <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Walmart%20USA/oX6f9BbCL9kJDJzfg_Walmart%20USA_dP7ZYCW8Z76DWQFQ2_1703234854244_completion_certificate.pdf" target="_blank" class="certification-link">View Certificate</a>
+            </div>
+        </div>
+    </section>
+<style>
+    #certifications {
+        background: #f9f9f9;
+        padding: 40px 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        animation: fadeInUp 1s ease-in-out;
+    }
+    
+    #certifications h2 {
+        font-size: 2.5em;
+        color: #6200ea;
+        text-align: center;
+        margin-bottom: 40px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        animation: slideIn 1s ease-in-out;
+    }
+    
+    .certifications-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    .certification-card {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        max-width: 300px;
+        width: 100%;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+        overflow: hidden;
+    }
+    
+    .certification-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        background-color: #f1f1f1;
+    }
+    
+    .certification-card h3 {
+        font-size: 1.4em;
+        color: #6200ea;
+        margin-bottom: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .certification-card p {
+        font-size: 1em;
+        color: #333;
+        line-height: 1.6;
+    }
+    
+    .certification-link {
+        display: inline-block;
+        margin-top: 10px;
+        font-size: 1em;
+        color: #6200ea;
+        text-decoration: none;
+        padding: 10px 15px;
+        border: 2px solid #6200ea;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    .certification-link:hover {
+        background-color: #6200ea;
+        color: #fff;
+    }
+    
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+</style>    
+  <section id="contact">
+    <h2>Contact Information</h2>
+    <div class="contact-container">
+        <div class="contact-card">
+            <img src="https://img.icons8.com/ios-filled/50/000000/email.png" alt="Email" class="contact-icon"/>
+            <div class="contact-info">
+                <h3>Email</h3>
+                <p><a href="mailto:bonagirisanjana1116@gmail.com">bonagirisanjana1116@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="contact-card">
+            <img src="https://img.icons8.com/ios-filled/50/000000/phone.png" alt="Phone" class="contact-icon"/>
+            <div class="contact-info">
+                <h3>Phone</h3>
+                <p><a href="tel:+916301804705">+91 6301804705</a></p>
+            </div>
+        </div>
+        <div class="contact-card">
+            <img src="https://img.icons8.com/ios-filled/50/000000/marker.png" alt="Location" class="contact-icon"/>
+            <div class="contact-info">
+                <h3>Location</h3>
+                <p>Hyderabad, India</p>
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+    #contact {
+        background: #fff;
+        padding: 40px 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        animation: fadeInUp 1s ease-in-out;
+    }
+    
+    .contact-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    .contact-card {
+        background: #f9f9f9;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        max-width: 300px;
+        width: 100%;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .contact-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .contact-icon {
+        width: 50px;
+        height: 50px;
+        color: #6200ea;
+        margin-bottom: 15px;
+    }
+    
+    .contact-info h3 {
+        font-size: 1.4em;
+        color: #6200ea;
+        margin-bottom: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .contact-info p {
+        font-size: 1em;
+        color: #333;
+        line-height: 1.6;
+    }
+    
+    .contact-info a {
+        color: #6200ea;
+        text-decoration: none;
+    }
+    
+    .contact-info a:hover {
+        text-decoration: underline;
+    }
+</style>
+</div>
+<footer>
+    <div class="social-links">
+        <a href="https://www.linkedin.com" target="_blank" class="social-icon">
+            <img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn"/>
+        </a>
+        <a href="https://github.com" target="_blank" class="social-icon">
+            <img src="https://img.icons8.com/ios-filled/50/000000/github.png" alt="GitHub"/>
+        </a>
+        <a href="https://twitter.com" target="_blank" class="social-icon">
+            <img src="https://img.icons8.com/ios-filled/50/000000/twitter.png" alt="Twitter"/>
+        </a>
+        <!-- Add more social media links as needed -->
+    
+         <style>
+            .social-links {
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+                margin-top: 10px;
+            }
+            
+            .social-icon {
+                display: inline-block;
+                transition: transform 0.3s ease, opacity 0.3s ease;
+            }
+            
+            .social-icon img {
+                width: 30px;
+                height: 30px;
+            }
+            
+            .social-icon:hover {
+                transform: scale(1.1);
+                opacity: 0.8;
+            }
+         </style>
+    </div>
+
+    <style>
+        /* Ensure the background image covers the entire viewport */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('') no-repeat center center fixed; 
+    background-size: cover; 
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Adjust container styles to ensure content is readable */
+.container {
+    position: relative;
+    width: 85%;
+    margin: auto;
+    padding: 30px 0;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background for readability */
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Make sure header and footer stand out on the background */
+header, footer {
+    background: rgba(98, 0, 234, 0.8); /* Semi-transparent background for header and footer */
+    color: #fff;
+}
+
+/* Optional: Add padding to improve spacing and readability */
+header, footer {
+    padding: 30px 20px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+section h2 {
+    font-size: 2.5em;
+    color: #6200ea;
+    text-align: center;
+}
+
+/* Make the content in the section stand out */
+#about, #projects, #skills, #contact {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background for sections */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Add styles for specific sections */
+#projects {
+    padding: 40px 20px;
+}
+
+/* Add responsiveness if needed */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+}
+</style>
+</body>
+
+</html>
